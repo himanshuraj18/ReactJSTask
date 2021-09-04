@@ -4,8 +4,6 @@ import axios from 'axios';
 import useFetch from "react-fetch-hook"
 
 export default function CardHolder({id = 1}) {
-    // console.log(id);
-    // console.log(cmnt_data);
     let cmnt_data = {
         name: 'id labore ex et quam laborum',
         email: 'Eliseo@gardner.biz',
@@ -14,10 +12,6 @@ export default function CardHolder({id = 1}) {
     const {isLoading, data} = useFetch(`https://jsonplaceholder.typicode.com/comments/${id}`);
     console.log(isLoading);
     console.log(data);
-    // let temp_data = null;
-    // cmnt_data = () => {return fetch(`https://jsonplaceholder.typicode.com/comments/${id}`)
-    // .then((response) => response.json())};
-    // console.log(cmnt_data);
     return (
         <div className="" style={{ "width": "98%", "height": "100vh" }}>
             <div className="d-flex align-items-center row justify-content-center h-100 d-inline-block">
@@ -40,18 +34,3 @@ export default function CardHolder({id = 1}) {
         </div>
     );
 }
-
-// CardHolder.defaultProps = {
-//     cmnt_data: {id: 1}
-// };
-
-// export async function getStaticProps({params}){
-//     const temp_data = await axios.get(`https://jsonplaceholder.typicode.com/comments/${params.id}`);
-//     const cmnt_data = temp_data.data;
-//     // console.log(1111111111111);
-//     return {
-// 		props: {
-// 			cmnt_data
-// 		}
-// 	};
-// }

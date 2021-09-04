@@ -1,14 +1,4 @@
 import React from "react"
-// import fetchPrint from "../App.js"
-import Card from "./CardHolder.js"
-
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
-import App from "../App";
 
 export default function CustomButton({ link, active, text, new_id }) {
     let temp_style = null;
