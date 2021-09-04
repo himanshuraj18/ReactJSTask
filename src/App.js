@@ -11,7 +11,7 @@ function getID(){
   let val =  window.location.href.split('/');
   let id = 1;
   for (let i = val.length; i >= 1; i--) {
-    if(val[i-1] == 'comments'){
+    if(val[i-1] === 'comments'){
       id = Number(val[i]);
     }
   }

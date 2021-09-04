@@ -1,6 +1,5 @@
 import React from "react"
 import CustomButton from "./CustomButton.js"
-import axios from 'axios';
 import useFetch from "react-fetch-hook"
 
 export default function CardHolder({id = 1}) {
